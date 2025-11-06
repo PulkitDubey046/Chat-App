@@ -7,7 +7,7 @@ import bgImage from './assets/bgImage.svg'
 
 const App = () => {
   return (
-    <div className={`bg-[url(${bgImage})] bg-cover min-h-screen`}>
+    <div style={{ backgroundImage: `url(${bgImage})` }} className="min-h-screen bg-cover bg-center bg-no-repeat">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
